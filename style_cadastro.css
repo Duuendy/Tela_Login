@@ -9,7 +9,7 @@
 }
 
 body{
-    background: linear-gradient(45deg, #0d192b, #0c5149, #0a8967);
+    background: linear-gradient(45deg, #0d192b, #0437F2, #3e8ede);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vh;
@@ -18,7 +18,7 @@ body{
     justify-content: center;
 }
 
-main.container{
+.container{
     background-color: #ffffff30;
     max-width: 400px;
     min-width: 40vh;
@@ -27,33 +27,33 @@ main.container{
     border-radius: 10px;
 }
 
-main h2{
+h1{
     font-weight: 600;
     margin-bottom: 2rem;
     position: relative;
 }
 
-main h2::before{
+h1::before{
     content: '';
     position: absolute;
     height: 4px;
-    width: 15px;
+    width: 127px;
     bottom: 1px;
     left: 0;
     border-radius: 8px;
-    background: linear-gradient(45deg, #0d192b, #0c5149, #0a8967);
+    background: linear-gradient(45deg, #0d192b, #3e8ede, #0437F2);
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-}
 .input-field{
     position: relative;
+    margin-top: 10px;
 }
 
-form .input-field:first-child{
-    margin-bottom: 1.5rem;  
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.2);
+    background-color: transparent;
 }
 
 .input-field .underline::before{
@@ -73,7 +73,7 @@ form .input-field:first-child{
     width: 100%;
     bottom: -5px;
     left: 0;
-    background: linear-gradient(45deg, #0d192b, #0c5149, #0a8967);
+    background: linear-gradient(45deg, #0d192b, #0437F2, #3e8ede);
     transform: scaleX(0);
     transition: all 0.3s ease;
     transform-origin: left;
@@ -83,21 +83,14 @@ form .input-field:first-child{
     transform: scaleX(1);
 }
 
-.input-field input{
-    outline: none;
-    font-size: 0.9rem;
-    color: rgba(0,0,0,0.2);
-    background-color: transparent;
-}
-
 .input-field input ::placeholder{
     color: rgba(0,0,0,0.5);
 }
 
-form input[type=submit]{
+input[type=submit]{
     margin-top: 2rem;
     padding: 0.4rem;
-    background: linear-gradient(to left, #0d192b, #0c5149, #0a8967);
+    background: linear-gradient(to right, #0d192b, #0437F2, #3e8ede);
     color: white;
     cursor: pointer;
     font-size: 0.9rem;
@@ -106,58 +99,12 @@ form input[type=submit]{
     transition: all 0.3s ease;
 }
 
-.cadastro{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 18px;
-}
 
 
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-
-.footer span{
-    color: black;
-    text-decoration: solid;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.footer .social-field{
-    padding: 0.4rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    width: 50%;
-    cursor: pointer;
-    margin-top: 1rem;
-    margin-left: 25%;
-}
 
 
-.footer .social-field a i{
-    margin: 0 0.5rem;
-    
-
-}
-.footer .social-field a{
-    text-decoration: none;
-    color: white;
-}
-
-.footer .social-field.twitter{
-    background: linear-gradient(to right, #00ACEE, #0e76a8)
-}
-
-.footer .social-field.linkedin{
-    background: linear-gradient(to right, #0e76a8, #00ACEE)
-}
-
-@media screen and (max-width: 767px) and (min-width: 320px){
+/* @media screen and (max-width: 767px) and (min-width: 320px){
 
     body{
         background: linear-gradient(90deg, #0a8967, #0c5149,#0d192b);
@@ -193,4 +140,4 @@ form input[type=submit]{
         font-size: 0.8rem;
         text-align: center;
 }
-}
+} */
