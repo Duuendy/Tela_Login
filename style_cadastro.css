@@ -87,9 +87,11 @@ h1::before{
     color: rgba(0,0,0,0.5);
 }
 
-input[type=submit]{
+button{
     margin-top: 2rem;
+    margin-left: 90px;
     padding: 0.4rem;
+    width: 150px;
     background: linear-gradient(to right, #0d192b, #0437F2, #3e8ede);
     color: white;
     cursor: pointer;
@@ -99,15 +101,21 @@ input[type=submit]{
     transition: all 0.3s ease;
 }
 
+.fa-eye{
+    position: absolute;
+    font-size: 0.9rem;
+    right: 10px;
+    cursor: pointer;
+}
 
 
 
 
 
-/* @media screen and (max-width: 767px) and (min-width: 320px){
+@media screen and (max-width: 767px) and (min-width: 320px){
 
     body{
-        background: linear-gradient(90deg, #0a8967, #0c5149,#0d192b);
+        background: linear-gradient(90deg,  #0437F2, #3e8ede,#0d192b);
         background-repeat: no-repeat;
     }
     main.container{
@@ -132,7 +140,7 @@ input[type=submit]{
         bottom: 1px;
         left: 58px;
         border-radius: 8px;
-        background: linear-gradient(45deg, #0d192b, #0c5149, #0a8967);
+        background: linear-gradient(45deg, #0d192b, #0437F2, #3e8ede);
 }
     .footer span{
         color: black;
@@ -140,4 +148,4 @@ input[type=submit]{
         font-size: 0.8rem;
         text-align: center;
 }
-} */
+}
